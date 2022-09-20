@@ -16,8 +16,8 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "EE247AD21C3F04ED00AE3E12"
                BuildableName = "SQLite.framework"
-               BlueprintName = "SQLite iOS"
-               ReferencedContainer = "container:SQLite.xcodeproj">
+               BlueprintName = "TNSQLite iOS"
+               ReferencedContainer = "container:TNSQLite.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,8 +32,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "EE247AD21C3F04ED00AE3E12"
             BuildableName = "SQLite.framework"
-            BlueprintName = "SQLite iOS"
-            ReferencedContainer = "container:SQLite.xcodeproj">
+            BlueprintName = "TNSQLite iOS"
+            ReferencedContainer = "container:TNSQLite.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <Testables>
@@ -43,8 +43,8 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "EE247ADC1C3F04ED00AE3E12"
                BuildableName = "SQLiteTests iOS.xctest"
-               BlueprintName = "SQLiteTests iOS"
-               ReferencedContainer = "container:SQLite.xcodeproj">
+               BlueprintName = "TNSQLiteTests iOS"
+               ReferencedContainer = "container:TNSQLite.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -64,8 +64,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "EE247AD21C3F04ED00AE3E12"
             BuildableName = "SQLite.framework"
-            BlueprintName = "SQLite iOS"
-            ReferencedContainer = "container:SQLite.xcodeproj">
+            BlueprintName = "TNSQLite iOS"
+            ReferencedContainer = "container:TNSQLite.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </LaunchAction>
@@ -80,8 +80,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "EE247AD21C3F04ED00AE3E12"
             BuildableName = "SQLite.framework"
-            BlueprintName = "SQLite iOS"
-            ReferencedContainer = "container:SQLite.xcodeproj">
+            BlueprintName = "TNSQLite iOS"
+            ReferencedContainer = "container:TNSQLite.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>
