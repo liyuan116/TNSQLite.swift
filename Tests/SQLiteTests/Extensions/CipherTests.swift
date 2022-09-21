@@ -1,14 +1,18 @@
+
 #if SQLITE_SWIFT_SQLCIPHER
 import XCTest
 import SQLite
 import SQLCipher
+import SQLite3
 
 class CipherTests: XCTestCase {
     var db1: Connection!
     var db2: Connection!
 
     override func setUpWithError() throws {
-        db1 = try Connection()
+        let path = Bundle(for: type(of: self)).path(forResource: "drivemotion", ofType: "sqlite")
+        db1 = try Connection(.uri(path!))
+
         db2 = try Connection()
         // db1
 
@@ -100,8 +104,9 @@ class CipherTests: XCTestCase {
     }
 
     func test_export() throws {
-        let tmp = temporaryFile()
-        try db1.sqlcipher_export(.uri(tmp), key: "mykey")
+        let tmp = try FileManager.default.url(for: .applicationSupportDirectory, in: .userDomainMask, appropriateFor: nil, create: true).appendingPathComponent("com.telenav.driveMotion.data")
+        print(tmp)
+        try db1.sqlcipher_export(.uri(tmp.path), key: "mykey")
 
         let conn = try Connection(tmp)
         try conn.key("mykey")
